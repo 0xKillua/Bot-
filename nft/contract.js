@@ -17,9 +17,6 @@ let contract = new ethers.Contract(
 );
 
 const track = async function () {
-  console.log(whaleAddress);
-
-  const adds = await provider.resolveName(ens);
   contract.on("OrdersMatched", (a, b, c, d, e, f) => {
     if (wallet.includes(d)) console.log(`From ${c}, To:${d}`);
   });
@@ -40,3 +37,17 @@ track();
 //     console.log(transaction);
 //   });
 // };
+
+// check if the transaction is mined
+
+// check if txn is legit
+
+// check if miner is 0x0
+
+// check if the txn is legit
+
+// define a function that mint a erc721 token with 1 ETH
+
+// define a function that send 1 ETH to a wallet
+
+// log the transaction hash
